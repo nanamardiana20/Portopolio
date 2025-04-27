@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inknut Antiqua', serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            padding: 0;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline-block;
+        }
+        .container {
+            padding: 20px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        figure {
+            margin: 0;
+            padding: 0;
+        }
+        figcaption {
+            font-size: 0.8em;
+            text-align: center;
+            margin-top: 8px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #abf794;
+            color :rgb(16, 18, 21);
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .col-sm {
+            flex: 1;
+            min-width: 300px;
+            padding: 15px;
+        }
+        .project {
+            padding: 50px 0;
+        }
+        .project.blue {
+            background-color:rgb(175, 152, 102);
+        }
+        footer {
+            text-align: center;
+            padding: 50px 20px;
+            background: #abf794;
+            color: rgb(16, 18, 21);
+        }
+
+        header h1 {
+            font-size: 4em; /* Adjust the font size as needed */
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#contact">Contact</a></li>
+        <li>Works</li>
+        <li>Experience</li>
+        <li class="empty"></li>
+        <li>Behance</li>
+        <li><a href="#Twitter">Twitter</a></li>
+        <li>LinkedIn</li>
+    </ul>
+</nav>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h1>Hi, I’m<br>Nana</h1>
+                <ul>
+                    <li>_I am a student majoring in Informatics</li>
+                    <li>_I study at UIN Datokarama Palu</li>
+                    <li>_Class of 2023</li>
+                    <li>_I am about to enter my 5th semester.</li>
+                </ul>
+                <a href="https://www.linkedin.com" class="button" target="_blank">Add me on LinkedIn</a>
+            </div>
+            <div class="col-sm">
+                <figure>
+                    <img src="img/nana.jpeg" class="intro-img" alt="nana">
+                    <figcaption>Photo by Nana</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <ul class="skill-list">
+        <li>01 Graphic Design</li>
+        <li>02 User Experience</li>
+        <li>03 User Interface Design</li>
+        <li>04 Design Thinking</li>
+        <li>05 User Research</li>
+    </ul>
+</section>
+
+<section class="project blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <figure>
+                    <img src="img/palekko.jpeg" alt="Kuliner Sulawesi Selatan">
+                    <figcaption>Photo by Nana1</figcaption>
+                </figure>
+            </div>
+            <div class="col-sm">
+                <h2>Branding Strategy<br>for Kuliner Sulawesi Selatan</h2>
+                <p>"Rasakan cita rasa otentik Palekko di setiap hidangan kami. Dari Coto Palekko yang kaya rempah hingga sambal pedas yang menggugah selera, setiap suapan membawa kelezatan yang tak terlupakan. Nikmati pengalaman kuliner yang memanjakan lidah dalam suasana yang hangat."</p>
+                <a href="detail.html" class="button">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="project">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm right-alignment">
+                <h2>User Experience Design<br>for Dashboard App</h2>
+                <p>Proyek desain UX inovatif yang mengubah analitik bisnis kompleks menjadi antarmuka digital yang intuitif dan mudah dipahami, seperti menyajikan hidangan lezat dalam tampilan yang sempurna. Solusi ini berfokus pada penyederhanaan visualisasi data, menciptakan dashboard bersih dan mudah diakses, yang memungkinkan profesional dengan cepat memahami dan bertindak berdasarkan wawasan bisnis yang krusial.</p>
+                <a href="detail2.html" class="button">Read More</a>
+            </div>
+            <div class="col-sm">
+                <figure>
+                    <img src="img/Dashboard.jpeg" alt="Dashboard">
+                    <figcaption>Photo by Nana2</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="project blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <figure>
+                    <img src="img/laptop dan handphone.jpeg" alt="laptop dan handphone">
+                    <figcaption>Photo by Nana3</figcaption>
+                </figure>
+            </div>
+            <div class="col-sm">
+                <h2>Laptop dan Handphone<br>for the Artists</h2>
+                <p>Solusi digital kreatif yang dirancang untuk memberdayakan seniman dengan menyediakan platform canggih dan serbaguna, memungkinkan mereka untuk mengoptimalkan proses kreatif, berkolaborasi lebih efektif, dan mewujudkan visi artistik dengan mudah dan fleksibel.</p>
+                <a href="detail3.html" class="button">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <h2>Any questions?<br>Find me here<br>nananana4872@gmail.com</h2>
+    <p>Designed & Developed by Nana Mardiana Ilyas 2025</p>
+</footer>
+
+</body>
+</html>

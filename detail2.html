@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Experience Design for Dashboard App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <style>
+        body {
+            font-family: 'Inknut Antiqua', serif;
+            background: #d3d397;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(240, 237, 237, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 30px;
+            margin: 0;
+            padding: 20px 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            padding: 60px 20px;
+        }
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .section p, .section ul {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .section ul {
+            padding-left: 20px;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+        .full-width-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+        .breadcrumb {
+            padding: 20px;
+            background-color: #fbfbfb;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 14px;
+        }
+        .breadcrumb a {
+            color: black;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Title Styling */
+        .image-container {
+            position: relative;
+        }
+        .project-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 30pt;
+            transform: translate(-50%, -50%);
+            color: black; /* Black text */
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Project Gallery */
+        .project-slider {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .slider-container {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 100%;
+        }
+
+        .slider-slide {
+            min-width: 100%;
+            height: 100%;
+        }
+
+        .slider-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slider-controls {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .slider-dot {
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .slider-dot:hover {
+            background-color: #bbb;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        input:checked + .slider-container {
+            transform: translateX(-100%);
+        }
+
+        input:checked + .slider-container + .slider-controls label:nth-child(1) {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="../index.html#contact">Contact</a></li>
+    <li><a href="#">Works</a></li>
+    <li><a href="#">Experience</a></li>
+    <li><a href="https://www.behance.net" target="_blank">Behance</a></li>
+    <li><a href="#">Twitter</a></li>
+    <li><a href="#">LinkedIn</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <section class="section">
+    <div class="image-container">
+        <img src="img/Dashboard2.jpeg" class="full-width-image" alt="Dashboard App UX Design Project">
+        <h1 class="project-title">User Experience Design<br>for Dashboard App</h1>
+    </div>
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / User Experience Design for Dashboard App
+    </div>
+    <h2>Project Overview</h2>
+    <p>Merancang pengalaman pengguna untuk aplikasi dashboard yang komprehensif untuk startup teknologi yang fokus pada analitik bisnis. Tujuan utama adalah menciptakan antarmuka yang intuitif, informatif, dan mudah dinavigasi bagi para profesional bisnis yang membutuhkan wawasan cepat dan mendalam.</p>
+  </section>
+
+  <section class="section">
+    <h2>Research & Discovery</h2>
+    <p>Proses penelitian mendalam meliputi:</p>
+    <ul>
+      <li>Wawancara mendalam dengan 50+ pengguna potensial dari berbagai industri</li>
+      <li>Analisis kompetitif terhadap 15 dashboard serupa di pasar</li>
+      <li>Sesi observasi pengguna untuk memahami alur kerja dan kebutuhan informasi</li>
+      <li>Pengujian prototipe awal dengan kelompok fokus pengguna</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>UX Design Strategy</h2>
+    <p>Pendekatan desain yang komprehensif berfokus pada:</p>
+    <ul>
+      <li>Desain antarmuka yang bersih dan minimalis</li>
+      <li>Visualisasi data yang informatif dan mudah dipahami</li>
+      <li>Sistem navigasi yang intuitif dengan hierarki informasi yang jelas</li>
+      <li>Responsivitas untuk berbagai ukuran layar dan perangkat</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Key Outcomes</h2>
+    <p>Hasil utama dari proyek desain UX:</p>
+    <ul>
+      <li>Peningkatan waktu penggunaan aplikasi sebesar 60%</li>
+      <li>Penurunan kompleksitas navigasi sebesar 40%</li>
+      <li>Peningkatan kepuasan pengguna sebesar 75% berdasarkan survei</li>
+      <li>Penghargaan 'Best UX Design' dari Digital Innovation Summit</li>
+    </ul>
+  </section>
+
+  <!-- Project Gallery -->
+  <section class="section">
+    <h2>Project Gallery</h2>
+    <div class="project-slider">
+      <input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+      <input type="radio" name="slider" id="slide2" class="slider-toggle">
+      <input type="radio" name="slider" id="slide3" class="slider-toggle">
+      
+      <div class="slider-container">
+        <div class="slider-slide">
+          <img src="img/Dashboard3.jpeg" alt="Dashboard App Main Interface">
+        </div>
+        <div class="slider-slide">
+          <img src="img/Dashboard3.jpeg" alt="Dashboard App Analytics View">
+        </div>
+        <div class="slider-slide">
+          <img src="img/Dashboard3.jpeg" alt="Dashboard App Mobile View">
+        </div>
+      </div>
+      
+      <div class="slider-controls">
+        <label for="slide1" class="slider-dot"></label>
+        <label for="slide2" class="slider-dot"></label>
+        <label for="slide3" class="slider-dot"></label>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h2>Interested in<br>learning more?<br><a href="mailto:nananana4872@gmail.com">nananana4872@gmail.com</a></h2>
+    <p>Designed & Developed by Nana Mardiana Ilyas 2025</p>
+  </footer>
+</div>
+
+</body>
+</html>

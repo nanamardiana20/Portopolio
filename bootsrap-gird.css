@@ -1,0 +1,155 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Inknut Antiqua', serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Container for the grid system */
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Row for flexbox layout */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  /* Basic column class for grid */
+  .col-sm {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px; /* Adjusted margin to avoid too long content vertically */
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (min-width: 576px) {
+    .col-sm {
+      flex: 1 1 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .col-sm {
+      flex: 1 1 33.33%;
+      max-width: 33.33%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .col-sm {
+      flex: 1 1 25%;
+      max-width: 25%;
+    }
+  }
+  
+  /* Utility Classes for text alignment */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .right-alignment {
+    text-align: right;
+  }
+  
+  /* Button Styling */
+  button, .button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  button:hover, .button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Image Styling */
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures images are contained properly */
+  }
+  
+  /* Styling for figure and caption */
+  figure {
+    margin: 0;
+  }
+  
+  figcaption {
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  /* Navigation Styling */
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    background-color: #333;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  /* Header Styling */
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    background-color: #fff;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+  }
+  
+  header ul {
+    list-style-type: none;
+  }
+  
+  header ul li {
+    margin-bottom: 5px;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+  }

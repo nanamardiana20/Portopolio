@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branding Strategy for Kuliner Sulawesi Selatan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <style>
+        body {
+            font-family: 'Inknut Antiqua', serif;
+            background: #77b6ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 30px;
+            margin: 0;
+            padding: 20px 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            padding: 60px 20px;
+        }
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .section p, .section ul {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .section ul {
+            padding-left: 20px;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+        .full-width-image {
+            width: 100%;
+            height: 100vh; /* Make image full screen height */
+            object-fit: cover;
+        }
+        .breadcrumb {
+            padding: 20px;
+            background-color: #fbfbfb;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 14px;
+        }
+        .breadcrumb a {
+            color: black;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Title Styling */
+        .image-container {
+            position: relative;
+        }
+        .project-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 30pt;
+            transform: translate(-50%, -50%);
+            color: black; /* Black text */
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* Gallery Styling */
+        .project-slider {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Full screen height */
+            overflow: hidden;
+        }
+
+        .slider-container {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 100%;
+        }
+
+        .slider-slide {
+            min-width: 100%;
+            height: 100%; /* Ensure slide fills the container */
+        }
+
+        .slider-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure image covers the slide area */
+        }
+
+        .slider-controls {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .slider-dot {
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .slider-dot:hover {
+            background-color: #bbb;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        input:checked + .slider-container {
+            transform: translateX(-100%);
+        }
+
+        input:checked + .slider-container + .slider-controls label:nth-child(1) {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="../index.html#contact">Contact</a></li>
+    <li><a href="#">Works</a></li>
+    <li><a href="#">Experience</a></li>
+    <li><a href="#blank">Behance</a></li>
+    <li><a href="#">Twitter</a></li>
+    <li><a href="#">LinkedIn</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <section class="section">
+    <div class="image-container">
+        <img src="img/palekko.jpeg" class="full-width-image" alt="Kuliner Sulawesi Selatan">
+        <h1 class="project-title">User Experience Design<br>for Dashboard App</h1>
+    </div>
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / User Experience Design for Dashboard App
+    </div>
+    <h2>Project Overview</h2>
+    <p>Strategi Merek untuk Culinary Innovations adalah pendekatan komprehensif untuk memposisikan ulang produk kuliner mereka di pasar yang sangat kompetitif.</p>
+  </section>
+
+  <section class="section">
+    <h2>Research & Discovery</h2>
+    <p>Conducted in-depth market research involving:</p>
+    <ul>
+		<li>Wawancara pengguna dengan 250+ peserta demografi target dalam industri kuliner</li>
+		<li>Analisis persaingan komprehensif dari 10 merek makanan dan restoran teratas</li>
+		<li>Pemetaan tren preferensi konsumen kuliner dan makanan sehat yang sedang berkembang</li>
+		<li>Profil psikologis segmen konsumen target dalam industri kuliner dan gaya hidup sehat</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Brand Identity Development</h2>
+    <p>Menciptakan identitas merek yang berfokus pada:</p>
+    <ul>
+		<li>Bahasa visual minimalis...</li>
+		<li>Palet warna yang terinspirasi oleh bahan makanan alami...</li>
+		<li>Tipografi yang mengomunikasikan kehangatan...</li>
+		<li>Desain kemasan berkelanjutan dengan bahan ramah lingkungan...</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Key Outcomes</h2>
+    <p>Strategi rebranding menghasilkan:</p>
+    <ul>
+		<li>Peningkatan pengenalan merek sebesar 35%</li>
+		<li>Peningkatan keterlibatan media sosial sebesar 42%</li>
+		<li>Peningkatan penjualan produk sebesar 25%</li>
+		<li>Dianugerahi 'Most Innovative Culinary Branding'...</li>
+    </ul>
+  </section>
+
+  <!-- Project Gallery -->
+  <section class="section">
+    <h2>Project Gallery</h2>
+    <div class="project-slider">
+      <input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+      <input type="radio" name="slider" id="slide2" class="slider-toggle">
+      <input type="radio" name="slider" id="slide3" class="slider-toggle">
+      
+      <div class="slider-container">
+        <div class="slider-slide">
+          <img src="img/palekko.jpeg" alt="Dashboard App">
+        </div>
+        <div class="slider-slide">
+          <img src="img/palekko.jpeg" alt="Cosmetics Project">
+        </div>
+        <div class="slider-slide">
+          <img src="img/palekko.jpeg" alt="iPad App">
+        </div>
+      </div>
+      
+      <div class="slider-controls">
+        <label for="slide1" class="slider-dot"></label>
+        <label for="slide2" class="slider-dot"></label>
+        <label for="slide3" class="slider-dot"></label>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h2>Interested in<br>learning more?<br><a href="mailto:nananana4872@gmail.com">nananana4872@gmail.com</a></h2>
+    <p>Designed & Developed by Nana Mardiana Ilyas 2025</p>
+  </footer>
+</div>
+
+</body>
+</html>
